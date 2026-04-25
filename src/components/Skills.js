@@ -1,38 +1,38 @@
 import React from 'react';
 import { Container, Row, Col, Badge } from 'react-bootstrap';
-import { Code, Web, Storage, Build, SupportAgent } from '@mui/icons-material';
+import { Code, Web, Storage, Build, SupportAgent, Terminal } from '@mui/icons-material';
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Languages',
-      icon: <Code />,
-      skills: ['JavaScript (ES6+)', 'HTML5', 'CSS3']
-    },
-    {
-      title: 'Frontend & React',
+      title: 'Frontend',
       icon: <Web />,
-      skills: ['React.js (Hooks, Context, Router)', 'Redux', 'Bootstrap', 'HTML5 / CSS3']
+      skills: ['React.js', 'React Hooks', 'Redux Toolkit', 'Context API', 'React Router', 'JavaScript (ES6+)', 'HTML5', 'CSS3']
     },
     {
       title: 'Backend',
-      icon: <Storage />,
-      skills: ['Node.js', 'Express.js', 'RESTful APIs']
+      icon: <Terminal />,
+      skills: ['Node.js', 'Express.js', 'REST API Design', 'JWT Authentication', 'Middleware', 'MVC Architecture']
     },
     {
       title: 'Databases',
       icon: <Storage />,
-      skills: ['MongoDB', 'MySQL']
+      skills: ['MongoDB', 'Mongoose ODM', 'MySQL', 'Database Schema Design', 'Query Optimization']
+    },
+    {
+      title: 'Languages',
+      icon: <Code />,
+      skills: ['JavaScript (ES6+)', 'HTML5', 'CSS3', 'SASS']
     },
     {
       title: 'Tools & DevOps',
       icon: <Build />,
-      skills: ['Git', 'GitHub', 'VS Code', 'cPanel', 'Figma', 'JWT Authentication']
+      skills: ['Git', 'GitHub', 'VS Code', 'Figma', 'Webpack', 'cPanel', 'Postman']
     },
     {
       title: 'Core Competencies',
       icon: <SupportAgent />,
-      skills: ['Component-Driven Development', 'Frontend Development', 'Performance Profiling', 'Cross-Browser Compatibility', 'UI/UX Implementation']
+      skills: ['Full-Stack Development', 'Component-Driven Development', 'Performance Optimization', 'Cross-Browser Compatibility', 'Responsive Design', 'Agile']
     }
   ];
 
@@ -43,6 +43,7 @@ const Skills = () => {
           <Col>
             <h2 className="display-5 fw-bold mb-3">Technical Skills</h2>
             <div className="mx-auto bg-primary mb-4" style={{ height: '4px', width: '60px', borderRadius: '2px' }}></div>
+            <p className="lead text-muted">Full-stack proficiency across the MERN ecosystem</p>
           </Col>
         </Row>
         <Row className="gy-4">

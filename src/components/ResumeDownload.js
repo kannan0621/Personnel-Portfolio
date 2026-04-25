@@ -3,54 +3,63 @@ import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
 
 const styles = StyleSheet.create({
   page: {
-    padding: '30px 40px',
+    padding: '32px 42px',
     backgroundColor: '#FFFFFF',
     color: '#1a1a1a',
     fontSize: 10,
     fontFamily: 'Helvetica',
     lineHeight: 1.35
   },
-  header: { textAlign: 'center', marginBottom: 10 },
-  name: { fontSize: 24, fontFamily: 'Helvetica-Bold', marginBottom: 2, color: '#000000', textTransform: 'uppercase', letterSpacing: 1.5 },
-  title: { fontSize: 12, fontFamily: 'Helvetica-Bold', color: '#333333', marginBottom: 4 },
+  header: { textAlign: 'center', marginBottom: 8 },
+  name: {
+    fontSize: 22,
+    fontFamily: 'Helvetica-Bold',
+    marginBottom: 2,
+    color: '#000000',
+    textTransform: 'uppercase',
+    letterSpacing: 1.5
+  },
+  title: { fontSize: 11.5, fontFamily: 'Helvetica-Bold', color: '#333333', marginBottom: 4 },
   contact: { fontSize: 9.5, color: '#333333', marginBottom: 1 },
-  divider: { borderBottomWidth: 1, borderBottomColor: '#cccccc', marginBottom: 8 },
+  divider: { borderBottomWidth: 1, borderBottomColor: '#aaaaaa', marginBottom: 8, marginTop: 4 },
 
-  section: { marginBottom: 9 },
+  section: { marginBottom: 8 },
   sectionHeading: {
-    fontSize: 10.5,
+    fontSize: 10,
     fontFamily: 'Helvetica-Bold',
     borderBottomWidth: 1.2,
     borderBottomColor: '#000000',
     paddingBottom: 2,
     marginBottom: 5,
     textTransform: 'uppercase',
-    letterSpacing: 0.8,
+    letterSpacing: 1,
     color: '#000000'
   },
 
-  summaryText: { lineHeight: 1.45, textAlign: 'justify', fontSize: 10 },
+  summaryText: { lineHeight: 1.5, textAlign: 'justify', fontSize: 10 },
 
-  expBlock: { marginBottom: 9 },
+  expBlock: { marginBottom: 8 },
   expRow: { flexDirection: 'row', justifyContent: 'space-between', marginBottom: 1 },
   expTitle: { fontFamily: 'Helvetica-Bold', fontSize: 10.5, color: '#000000' },
   expDate: { fontFamily: 'Helvetica-Bold', fontSize: 10, color: '#333333' },
-  expCompany: { fontFamily: 'Helvetica-Bold', fontSize: 10, color: '#444444', marginBottom: 3 },
+  expCompany: { fontFamily: 'Helvetica-Bold', fontSize: 10, color: '#555555', marginBottom: 3 },
+
   bulletRow: { flexDirection: 'row', marginBottom: 2 },
   bulletDot: { width: 10, fontSize: 10, color: '#000' },
-  bulletText: { flex: 1, lineHeight: 1.35, fontSize: 10 },
+  bulletText: { flex: 1, lineHeight: 1.38, fontSize: 10 },
 
   skillRow: { flexDirection: 'row', marginBottom: 3 },
-  skillLabel: { fontFamily: 'Helvetica-Bold', fontSize: 10, width: 155 },
+  skillLabel: { fontFamily: 'Helvetica-Bold', fontSize: 10, width: 160 },
   skillValue: { flex: 1, fontSize: 10, lineHeight: 1.3 },
 
+  projectBlock: { marginBottom: 6 },
   projectTitle: { fontFamily: 'Helvetica-Bold', fontSize: 10.5, color: '#000000', marginBottom: 2 },
-  projectDesc: { fontSize: 10, lineHeight: 1.35, marginBottom: 2 },
-  projectTech: { fontSize: 9.5, color: '#444444', fontFamily: 'Helvetica-Oblique' },
+  projectDesc: { fontSize: 10, lineHeight: 1.4, marginBottom: 2 },
+  projectTech: { fontSize: 9.5, color: '#555555', fontFamily: 'Helvetica-Oblique' },
 
   eduBlock: { marginBottom: 5 },
   eduTitle: { fontFamily: 'Helvetica-Bold', fontSize: 10.5, color: '#000000', marginBottom: 1 },
-  eduSub: { fontSize: 10, color: '#444444' },
+  eduSub: { fontSize: 10, color: '#555555' },
 });
 
 const Bullet = ({ text }) => (
@@ -67,9 +76,8 @@ const ResumeDownload = () => (
       {/* Header */}
       <View style={styles.header}>
         <Text style={styles.name}>R. KANNAN</Text>
-        <Text style={styles.title}>React Developer | Frontend Developer</Text>
+        <Text style={styles.title}>MERN Stack Developer | Full Stack Web Developer</Text>
         <Text style={styles.contact}>+91 63693 07080  |  r.kannan0621@gmail.com  |  Coimbatore, Tamil Nadu</Text>
-        <Text style={styles.contact}>linkedin.com/in/kannan-r-7618772a1  |  github.com/kannan0621  |  kannan.portfolio</Text>
       </View>
       <View style={styles.divider} />
 
@@ -77,12 +85,12 @@ const ResumeDownload = () => (
       <View style={styles.section}>
         <Text style={styles.sectionHeading}>Professional Summary</Text>
         <Text style={styles.summaryText}>
-          Results-driven React Developer with over 1 year of professional experience building high-performance,
-          scalable web applications. Proficient in React.js, Redux Toolkit, and the MERN stack, with a proven track
-          record of reducing bundle size by 22% and improving First Contentful Paint by 30% across 50+ projects.
-          Skilled in translating Figma designs into SEO-optimized, pixel-perfect interfaces while maintaining a 95+
-          Lighthouse performance score. Strong communicator with a focus on clean code, cross-browser compatibility,
-          and on-time project delivery.
+          Dedicated MERN Stack Developer with over 1 year of professional experience building full-stack web
+          applications using MongoDB, Express.js, React.js, and Node.js. Proven record of delivering secure REST
+          APIs, scalable backend services, and high-performance React frontends — reducing bundle size by 22% and
+          improving First Contentful Paint by 30% across 50+ projects. Adept at JWT authentication, database
+          schema design, Redux Toolkit state management, and translating Figma designs into production-ready
+          interfaces. Committed to clean code, on-time delivery, and measurable business impact.
         </Text>
       </View>
 
@@ -92,28 +100,28 @@ const ResumeDownload = () => (
 
         <View style={styles.expBlock}>
           <View style={styles.expRow}>
-            <Text style={styles.expTitle}>React Developer</Text>
+            <Text style={styles.expTitle}>MERN Stack Developer</Text>
             <Text style={styles.expDate}>Feb 2024 – Present</Text>
           </View>
           <Text style={styles.expCompany}>Harvee Designs, Coimbatore</Text>
-          <Bullet text="Architected and deployed 50+ modular, reusable React applications ensuring 100% responsiveness, serving 5,000+ monthly unique visitors." />
-          <Bullet text="Optimized frontend performance by 30% through React memoization, lazy loading, and code splitting — measured via Lighthouse audits." />
-          <Bullet text="Managed 20+ global application states using Redux Toolkit, reducing state-management complexity and related bugs by 40%." />
-          <Bullet text="Integrated complex RESTful APIs using Axios, managing asynchronous data flows for real-time application updates." />
-          <Bullet text="Translated high-fidelity Figma mockups into interactive React components with 99% design accuracy and full SEO optimization." />
-          <Bullet text="Engineered WordPress and Elementor-based CMS solutions for diverse clients, achieving a 100% on-time project delivery rate." />
+          <Bullet text="Designed and deployed 50+ full-stack web applications using React.js frontends and Node.js/Express.js REST APIs, serving 5,000+ monthly active users." />
+          <Bullet text="Reduced First Contentful Paint by 30% through React lazy loading, code splitting, and memoization — validated via Lighthouse performance audits." />
+          <Bullet text="Streamlined global state management across 20+ projects using Redux Toolkit, eliminating 40% of state-related production bugs." />
+          <Bullet text="Developed secure RESTful APIs with JWT authentication and Express.js middleware, enabling reliable client-server data exchange and protected routes." />
+          <Bullet text="Collaborated with UI/UX designers to translate Figma prototypes into responsive, pixel-perfect React components across all device breakpoints." />
+          <Bullet text="Delivered WordPress and Elementor CMS solutions for clients with a 100% on-time project completion rate." />
         </View>
 
         <View style={styles.expBlock}>
           <View style={styles.expRow}>
-            <Text style={styles.expTitle}>React and MERN Developer Trainee</Text>
+            <Text style={styles.expTitle}>MERN Stack Developer Trainee</Text>
             <Text style={styles.expDate}>Jun 2023 – Nov 2023</Text>
           </View>
           <Text style={styles.expCompany}>Smartcliff Technologies, Coimbatore</Text>
-          <Bullet text="Developed the enterprise frontend of a Learning Management System (LMS) using React.js, React Router, and Context API for 100+ internal users." />
-          <Bullet text="Reduced API request latency by 25% through efficient asynchronous data-fetching patterns and optimized frontend middleware." />
-          <Bullet text="Implemented JWT-based authentication and protected route middleware for secure session management across the application." />
-          <Bullet text="Designed and validated MongoDB schemas, improving database query response times by 20%." />
+          <Bullet text="Developed the complete frontend of an enterprise Learning Management System (LMS) using React.js, React Router, and Context API for 100+ internal users." />
+          <Bullet text="Designed and validated MongoDB schemas with Mongoose ODM, improving database query performance by 20%." />
+          <Bullet text="Built JWT-based authentication and route protection middleware with Express.js, securing sensitive student records across all user roles." />
+          <Bullet text="Cut API request latency by 25% through asynchronous fetch patterns, request batching, and optimized Express middleware pipelines." />
         </View>
       </View>
 
@@ -125,20 +133,20 @@ const ResumeDownload = () => (
           <Text style={styles.skillValue}>JavaScript (ES6+), HTML5, CSS3, SASS</Text>
         </View>
         <View style={styles.skillRow}>
-          <Text style={styles.skillLabel}>Frameworks and Libraries:</Text>
+          <Text style={styles.skillLabel}>Frontend:</Text>
           <Text style={styles.skillValue}>React.js, React Hooks, Redux Toolkit, Context API, React Router, Axios, Material-UI, Bootstrap 5, Tailwind CSS</Text>
         </View>
         <View style={styles.skillRow}>
-          <Text style={styles.skillLabel}>Backend and Databases:</Text>
-          <Text style={styles.skillValue}>Node.js, Express.js, MongoDB, MySQL, RESTful APIs, JWT Authentication</Text>
+          <Text style={styles.skillLabel}>Backend:</Text>
+          <Text style={styles.skillValue}>Node.js, Express.js, REST API Design, JWT Authentication, Middleware, MVC Architecture</Text>
+        </View>
+        <View style={styles.skillRow}>
+          <Text style={styles.skillLabel}>Databases:</Text>
+          <Text style={styles.skillValue}>MongoDB, Mongoose ODM, MySQL, Database Schema Design, Query Optimization</Text>
         </View>
         <View style={styles.skillRow}>
           <Text style={styles.skillLabel}>Tools and Platforms:</Text>
-          <Text style={styles.skillValue}>Git, GitHub, VS Code, Figma, Webpack, cPanel, WordPress, Elementor</Text>
-        </View>
-        <View style={styles.skillRow}>
-          <Text style={styles.skillLabel}>Core Competencies:</Text>
-          <Text style={styles.skillValue}>Component-Driven Development, Performance Profiling, Cross-Browser Compatibility, Responsive Design, Agile Collaboration</Text>
+          <Text style={styles.skillValue}>Git, GitHub, VS Code, Figma, Webpack, Postman, cPanel, WordPress</Text>
         </View>
       </View>
 
@@ -146,23 +154,23 @@ const ResumeDownload = () => (
       <View style={styles.section}>
         <Text style={styles.sectionHeading}>Personal Projects</Text>
 
-        <View style={{ marginBottom: 7 }}>
+        <View style={styles.projectBlock}>
           <Text style={styles.projectTitle}>Developer Portfolio Website</Text>
           <Text style={styles.projectDesc}>
-            Built a fully responsive, single-page portfolio using React.js with PDF resume generation via
-            @react-pdf/renderer. Features dark/light mode toggle, smooth scrolling, and a print-optimized resume
-            layout. Deployed via cPanel.
+            Built a single-page portfolio with React.js featuring PDF resume generation, dark/light mode toggle,
+            smooth scroll navigation, and responsive layout. Deployed to production via cPanel hosting.
           </Text>
           <Text style={styles.projectTech}>Tech Stack: React.js, Bootstrap 5, @react-pdf/renderer, CSS3</Text>
         </View>
 
-        <View>
-          <Text style={styles.projectTitle}>Real-Time Inventory Management UI</Text>
+        <View style={styles.projectBlock}>
+          <Text style={styles.projectTitle}>Learning Management System (LMS)</Text>
           <Text style={styles.projectDesc}>
-            Developed a React-based inventory dashboard featuring live stock tracking, role-based filtering, and
-            data visualizations. Integrated RESTful APIs for real-time CRUD operations with MongoDB backend.
+            Engineered a full-stack LMS with React.js frontend, Node.js/Express.js backend, and MongoDB database.
+            Includes user authentication, dynamic course management, student dashboards, and protected routing for
+            100+ internal users at Smartcliff Technologies.
           </Text>
-          <Text style={styles.projectTech}>Tech Stack: React.js, Redux Toolkit, Node.js, MongoDB, Axios</Text>
+          <Text style={styles.projectTech}>Tech Stack: React.js, Node.js, Express.js, MongoDB, JWT, React Router</Text>
         </View>
       </View>
 
@@ -187,8 +195,8 @@ const ResumeDownload = () => (
       <View style={styles.section}>
         <Text style={styles.sectionHeading}>Additional Information</Text>
         <Text style={styles.summaryText}>
-          Languages: English (Professional), Tamil (Native).
-          Interests: Open source contribution, modern UI/UX trends, frontend performance engineering.
+          Languages: English (Professional), Tamil (Native). Open to full-time and contract MERN Stack
+          Developer roles. Interests include open source contribution and modern UI/UX engineering.
         </Text>
       </View>
 

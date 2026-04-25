@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { Person, Speed, Code } from '@mui/icons-material';
+import { Code, Storage, Web } from '@mui/icons-material';
 
 const About = () => {
   return (
@@ -15,9 +15,10 @@ const About = () => {
         <Row className="gy-4">
           <Col lg={12}>
             <p className="lead text-center mb-5 px-lg-5" style={{ lineHeight: '1.8' }}>
-              Dynamic React Developer with over a year of professional experience specializing in building highly interactive, 
-              high-performance web applications. Proven track record of delivering 50+ responsive, state-driven interfaces, 
-              achieving a 30% reduction in page load speeds through advanced React performance techniques.
+              MERN Stack Developer with over a year of professional experience designing and delivering full-stack
+              web applications. Proficient in MongoDB, Express.js, React.js, and Node.js — with a strong track
+              record of building secure REST APIs, scalable backend services, and high-performance React frontends.
+              Committed to clean architecture, rapid delivery, and measurable results.
             </p>
           </Col>
           <Col md={4}>
@@ -26,9 +27,9 @@ const About = () => {
                 <div className="mb-4 text-primary">
                   <Code sx={{ fontSize: 50 }} />
                 </div>
-                <Card.Title className="fw-bold mb-3">React Development</Card.Title>
+                <Card.Title className="fw-bold mb-3">Frontend Development</Card.Title>
                 <Card.Text className="text-muted">
-                  Expert in component design patterns, hooks, and complex state management, ensuring scalable frontend development.
+                  Building responsive, component-driven React interfaces with Redux Toolkit, hooks, and optimized rendering for production-grade UX.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -37,11 +38,11 @@ const About = () => {
             <Card className="h-100 border-0 shadow-sm text-center p-4 skill-card bg-body">
               <Card.Body>
                 <div className="mb-4 text-primary">
-                  <Speed sx={{ fontSize: 50 }} />
+                  <Storage sx={{ fontSize: 50 }} />
                 </div>
-                <Card.Title className="fw-bold mb-3">Performance Engineering</Card.Title>
+                <Card.Title className="fw-bold mb-3">Backend & Database</Card.Title>
                 <Card.Text className="text-muted">
-                  Optimizing React applications via code splitting, memoization, and efficient rendering strategies for lightning-fast UX.
+                  Developing RESTful APIs using Node.js and Express.js, with MongoDB and MySQL database design, JWT authentication, and secure middleware.
                 </Card.Text>
               </Card.Body>
             </Card>
@@ -50,11 +51,11 @@ const About = () => {
             <Card className="h-100 border-0 shadow-sm text-center p-4 skill-card bg-body">
               <Card.Body>
                 <div className="mb-4 text-primary">
-                  <Person sx={{ fontSize: 50 }} />
+                  <Web sx={{ fontSize: 50 }} />
                 </div>
-                <Card.Title className="fw-bold mb-3">UI/UX Implementation</Card.Title>
+                <Card.Title className="fw-bold mb-3">Full-Stack Integration</Card.Title>
                 <Card.Text className="text-muted">
-                  Translating design system mockups into interactive, pixel-perfect React components with seamless animations.
+                  Connecting frontend and backend seamlessly — REST API integration, state management, data flow design, and end-to-end deployment.
                 </Card.Text>
               </Card.Body>
             </Card>

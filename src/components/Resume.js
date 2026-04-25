@@ -37,13 +37,7 @@ const Resume = () => {
             <span className="sep">|</span>
             <span>Coimbatore, Tamil Nadu</span>
           </div>
-          <div className="resume-contact-bar">
-            <a href="https://linkedin.com/in/kannan-r-7618772a1" target="_blank" rel="noreferrer">LinkedIn</a>
-            <span className="sep">|</span>
-            <a href="https://github.com/kannan0621" target="_blank" rel="noreferrer">GitHub</a>
-            <span className="sep">|</span>
-            <span>kannan.portfolio</span>
-          </div>
+
         </header>
 
         {/* Professional Summary */}
@@ -139,13 +133,14 @@ const Resume = () => {
 
           <div className="exp-block">
             <div className="exp-row">
-              <span className="exp-title">Real-Time Inventory Management UI</span>
+              <span className="exp-title">Learning Management System (LMS)</span>
             </div>
             <p className="project-desc">
-              Developed a React-based inventory management dashboard featuring live stock tracking, role-based
-              filtering, and data visualizations. Integrated RESTful APIs for real-time CRUD operations.
+              Built the full-stack frontend of an enterprise LMS during the Smartcliff Technologies trainee program.
+              Features include dynamic course management, student dashboards, protected routing, and JWT-based
+              authentication — serving 100+ internal users.
             </p>
-            <p className="project-tech">Tech Stack: React.js, Redux Toolkit, Node.js, MongoDB, Axios</p>
+            <p className="project-tech">Tech Stack: React.js, React Router, Context API, Node.js, Express.js, MongoDB, JWT</p>
           </div>
         </section>
 
